@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <style>
+        @keyframes flyIn {
+            from {
+                transform: translateY(-100vh) scale(0.5);
+                opacity: 0;
+            }        to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+        .fly-in {
+            animation: flyIn 01s ease-out forwards;
+        }
+        h6{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class ="wrapper fly-in">
+        <form action="/dash" method="post">
+            <h1>Login</h1>
+            <div class="input-box fly-in    ">
+                <input type="text" placeholder="Username" name="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box fly-in">
+                <input type="password" placeholder="Password" name="password" required>
+                <i class='bx bxs-lock-alt' ></i>     
+            </div>
+            <h6><%=ers%></h6>
+            <br>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>

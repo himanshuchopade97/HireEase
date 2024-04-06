@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20pt;
+}
+img{
+    padding-bottom:0px;
+    padding-top: 100px;
+    translate:-10%;
+}
+#logo{
+    float: left;
+    height: 80px;
+    padding-top: 10px;
+    background-color: aliceblue;
+    margin-top:20px;
+    border-radius: 12px;
+    translate: 10px;
+}

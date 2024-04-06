@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            Post A Job
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <header>
+        <img src="logo2.png" id="logo">
+        <h1>
+            
+            <strong><br>Post About a Job</strong>
+         </h1><br>
+         <hr>
+ 
+         <br>
+         
+        
+    </header>
+    <link href="post.css" rel="StyleSheet">
+    <body>
+        
+        
+        
+        <div class="jobinfo">  
+        
+        <form action="/added" method="post">
+            
+                
+                
+                
+            
+            <label for="Username"> Username:   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="text" id="uname" name="uname" required class="input-box" class="input"><br><br>
+            
+            <label for="Password"> Password:   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="password" id="password" name="password" required class="input-box" class="input"><br><br><br>
+
+    
+
+            <label for="Company name"> Company Name:&nbsp &nbsp &nbsp &nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <select name="company" id="">
+                <option value=1>Google</option>
+                <option value=2>Microsoft</option>
+                <option value=3>Flipkart</option>
+                <option value=4>Amazon</option>
+                <option value=5>PaloAlto</option>
+                <option value=6>BMC</option>
+                <option value=7>HERO</option>
+                <option value=8>Barclays</option>
+                <option value=9>Meta</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="gpa">GPA Cutoff: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="number" id="gpa" name="gpa" class="input-box" class="input"><br><br>
+
+            <label for="Role"> Role:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="text" id="Role" name="role" required class="input-box" class="input"><br><br>
+
+            <label for="salary">Salary(LPA): &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="number" id="salary" name="salary" class="input-box" class="input"><br><br><br>
+
+            <label for="JobDesc"> Job Description: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="text" id="Jdesc" name="jdesc" required class="input-box big" class="input"><br><br><br><br><br>
+
+            <label for="requirement"> Requirement: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+            <input type="text" id="requirement" name="requirement" required class="input-box big" class="input"><br><br><br>
+            
+            <button id="submit">Submit</button>
+            
+        </form>
+
+        
+    </div>
+
+    </body>
+</html>

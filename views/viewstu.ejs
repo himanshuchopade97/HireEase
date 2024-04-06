@@ -1,0 +1,39 @@
+<html>
+    <head >
+
+        <title>Navbar</title>
+        <link href="stdash.css" rel="StyleSheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "menu-bar">
+        <header ><div id="logo">
+            <img class="logo" src="logo2.png" alt="logo"></div>
+            
+        </header>
+        </div>
+        <div id="studentphoto">
+            
+                <img src="student.jpeg" alt="Student photo" id="studentp" >
+            
+        </div>
+        <div id="info">
+            <p>
+            <b style="font-size: largest "><strong><h3>Student Information</h3></strong></b></b><br>
+           <b>Name</b> :       <%= st[0].SNAME %><br><br>
+            <b>Roll No </b>:       <%= st[0].SID %><br><br>
+            <b>Contact</b>:   <%= st[0].SCONTACT %><br><br>
+            <b>E-mail </b>:    <%= st[0].SMAIL %><br><br>
+            <b>DOB </b>:    <%= st[0].DATE_OF_BIRTH %><br><br>
+            <b>Gender </b>:    <%= st[0].GENDER %><br><br>
+            <b>CGPA </b>:    <%= st[0].CGPA %><br><br>
+
+
+        </div>
+
+
+    </body>
+</html>

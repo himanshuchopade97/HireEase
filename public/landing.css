@@ -1,0 +1,88 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: url("6268643.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;    
+    min-height:100vh;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#center-text{
+    padding:190px 120px 50px 120px;
+    color:rgb(254, 255, 255);
+    font-size:50px;
+    font-size:5vw;
+}
+#text{
+    padding:1px 20px 20px 130px;
+    color:white;
+    float:left;  /* change 2*/
+    font-size: 18px;
+}
+#Login{
+    padding:1px 20px 20px 130px;
+    background-color: orange;
+
+}
+#btn{
+    top:-100px;      /* change 3*/
+    right: -390px;  /* change 4*/
+    transform:translateY(-50%);
+    margin:auto;
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+    position: relative;   /* change 5*/
+    width:15%;
+    height:45px;
+    background:white;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size:20px;
+    color:black;
+    clear: left;        /* change 6*/
+}
+
+#btn:hover{
+    background: rgb(85, 105, 111) ;
+    border-radius: 10px;
+}
+
+@media screen and(max-width:768px){
+    #center-text{
+        font-size:8vw;
+    }
+    #text,#Login{
+        padding:5% 10%;
+    }
+    #btn{
+        width:80%;
+        font-size:5vw;
+    }
+}
+
+header {
+    position: fixed;
+    top: 120px;
+    right: 200px;
+    width: 280px; /* Adjust the width as needed */
+    height: 280px; /* Adjust the height as needed */
+    padding:40px; /* Optional: Add padding for spacing */
+    background-color: #31202000; /* Optional: Add a background color */
+}
+
+header img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: contain; /* Maintain aspect ratio while fitting inside the container */
+    border-radius: 100%;
+    background-color: white;
+}

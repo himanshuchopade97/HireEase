@@ -1,0 +1,104 @@
+* {
+    position: relative;
+    left: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+body {
+    background: url("rm314-bb-18.jpg") no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 15px; /* Adjust font size */
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to body */
+    background-size: cover;
+    
+}
+
+header {
+    width:100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);    
+    color: white;
+    padding: 20px ; /* Add padding for better alignment */
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to header */
+}
+
+h1 {
+    margin: 0; /* Correct margin value */
+    text-align: left;
+}
+
+main {
+    color:white;
+    padding: 20px;
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to main */
+}
+
+.job-description {
+    margin: 0;
+    transform: translateX(1%); /* Correct spelling and adjust transform */
+    margin-bottom: 30px;
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to job descriptions */
+}
+
+h2 {
+    color: white;
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to h2 elements */
+}
+
+h3 {
+    color: white;
+    margin-top: 10px;
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to h3 elements */
+}
+
+ul {
+    color:white;
+    list-style-type: disc;
+    padding-left: 20px;
+    animation: fadeIn 0.7s ease-in-out; /* Apply animation to ul elements */
+}
+
+.apply-button {
+    position: absolute;
+    top: 25px;
+    left: 38%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0d8a93;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #051b71;
+}
+@media (max-width: 768px) {
+    .apply-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apply-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

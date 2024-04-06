@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Job Notifications</title>
+    <link href="tpchdash.css" rel="stylesheet">
+    <style>
+        input{
+            height: 0px;
+            width: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="navBar">
+            <li class="navLink"><form action="/post" method="get"><button><strong>New Job</strong></button></form></li>
+            <li class="navLink"><form action="/close" method="get"><button><strong>Close Opening</strong></button></form></li>
+            <li class="navLink"><form action="/placed/0" method="get"><button><strong>Unplaced</strong></button></form></li>
+            <li class="navLink"><form action="/placed/1" method="get"><button><strong>Placed</strong></button></form></li>
+
+            
+        </ul>
+        <img src="logo2.png" id="logo">
+    </header>
+
+    <h1>Job Openings</h1>
+ 
+    <%for(subtask of n){%>
+        <div class="p">
+            <a href="#">
+    <div class="company">
+        <ul>
+            <li><strong class="cname"><%=subtask.JobRole%></strong></li><br>
+            <li>GPA Cutoff: <%=subtask.CGPA%></li>
+            <li>SALARY: <%=subtask.SALARY%></li>
+            <form action="/viewer" method="post">
+                <input type="text" name="jid" value="<%=subtask.JID%>">
+                <button>VIEW</button>
+            </form>
+        </ul>
+    </div></a>
+        </div>
+    <%}%>
+    </div></a>
+</body>
+</html>
